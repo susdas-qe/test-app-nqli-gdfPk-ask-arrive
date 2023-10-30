@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: multi-stage-build-go-sample-miek
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-ewyu-tenant/test-app-nqli/multi-stage-build-go-sample-miek@sha256:85d89a8e3d9fce58138c2bc29d38cc1d96faf552d9e542de4d7459f526d56dba
+        name: my-go
+        resources: {}
+status: {}
